@@ -1,6 +1,6 @@
 {
   "name": "bvbuilder",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Un CLI puissant pour générer automatiquement vos routes, controllers et models avec documentation Swagger et création de table SQL.",
   "bin": {
     "bvbuilder": "./bin/bvbuilder.js"
@@ -13,7 +13,14 @@
     "url": "https://github.com/Xenozn/bvbuilder/issues"
   },
   "homepage": "https://github.com/Xenozn/bvbuilder#readme",
-  "keywords": ["express", "cli", "generator", "swagger", "mysql2", "automation"],
+  "keywords": [
+    "express",
+    "cli",
+    "generator",
+    "swagger",
+    "mysql2",
+    "automation"
+  ],
   "author": "Xenozn",
   "license": "MIT",
   "dependencies": {
