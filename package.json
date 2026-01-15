@@ -1,0 +1,23 @@
+{
+  "name": "bvbuilder",
+  "version": "1.0.0",
+  "description": "CLI tool to generate Express routes, controllers, and models with Swagger doc",
+  "main": "./bin/index.js",
+  "bin": {
+    "bvbuilder": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["express", "cli", "generator", "swagger", "mysql2", "nodejs"],
+  "author": "Ton Nom",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.2.16",
+    "mysql2": "^3.9.7"
+  }
+}
