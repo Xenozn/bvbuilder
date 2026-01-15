@@ -32,45 +32,13 @@ ${needAuth ? 'const authMiddleware = require("../../middlewares/authMiddleware")
  *     summary: Récupérer la liste des ${pluralName}
  *     tags:
  *       - ${className}s
- *     parameters:
- *       - in: query
- *         name: page
- *         schema:
- *           type: integer
- *           example: 1
- *         description: Numéro de page pour la pagination
- *       - in: query
- *         name: limit
- *         schema:
- *           type: integer
- *           example: 10
- *         description: Nombre d’éléments par page
- *       - in: query
- *         name: search
- *         schema:
- *           type: string
- *           example: "exemple"
- *         description: Terme de recherche
  *     responses:
- *       200:
+ *       '200':
  *         description: Succès
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 status:
- *                   type: string
- *                   example: success
- *                 total_records:
- *                   type: integer
- *                 data:
- *                   type: array
- *                   items:
- *                     $ref: '#/components/schemas/${className}'
- *       500:
+ *       '500':
  *         description: Erreur serveur
  */
+
 
 router.get('/', ${needAuth ? 'authMiddleware, ' : ''}${name}Controller.getAll${pluralize(className)});
 
