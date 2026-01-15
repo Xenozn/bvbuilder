@@ -2,9 +2,8 @@
   "name": "bvbuilder",
   "version": "1.0.1",
   "description": "Un CLI puissant pour générer automatiquement vos routes, controllers et models avec documentation Swagger et création de table SQL.",
-  "main": "./bin/index.js",
   "bin": {
-    "bvbuilder": "./bin/index.js"
+    "bvbuilder": "./bin/bvbuilder.js"
   },
   "repository": {
     "type": "git",
