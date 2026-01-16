@@ -13,5 +13,6 @@ bvbuilder controller nom v1
 bvbuilder model nom v1
 
 bvbuilder all nom v1
+bvbuilder crud nom v1
 Le nom au singulier
 
