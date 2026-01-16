@@ -13,6 +13,19 @@ const program = new Command();
 program.name('bvbuilder').version('1.3.0');
 
 program
+    .command('crud')
+    .argument('<name>')
+    .argument('[version]', 'v1')
+    .description('Génère un CRUD complet (Model, Controller, Route) sans auth')
+    .action(async (name, version) => {
+        const createCrud = require('../lib/createCrud');
+        await createCrud(name, version);
+        console.log(`🚀 CRUD pour "${name}" généré avec succès dans src/${version} !`);
+    });
+
+program.parse(process.argv);
+
+program
     .command('all')
     .argument('<name>')
     .argument('[version]', 'v1')
